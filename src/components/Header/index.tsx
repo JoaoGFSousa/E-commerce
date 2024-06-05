@@ -3,6 +3,10 @@
 import { StyledLink } from "../Link";
 import { Input } from "../Input";
 import * as S from "./header.style";
+import { AiOutlineSearch } from "react-icons/ai";
+import IconButton from "../IconButton";
+import { BiUserCircle, BiSolidCartAlt } from "react-icons/bi";
+import { Button } from "../Button";
 
 const Header: React.FC = () => {
   return (
@@ -11,13 +15,26 @@ const Header: React.FC = () => {
         <S.HeaderTop>
           <p>Welcome To Eco Market</p>
           <div>
-            <StyledLink href="/">Login</StyledLink>
-            <StyledLink href="/">Cadastro</StyledLink>
+            <StyledLink href="/login">Login</StyledLink>
+            <StyledLink href="/cadastro">Cadastro</StyledLink>
           </div>
         </S.HeaderTop>
         <S.HeaderCenter>
           <h1>Eco Market</h1>
-          <Input placeholder="Pesquisar" />
+          <div>
+            <Input placeholder="Pesquisar" />
+            <IconButton icon={AiOutlineSearch} />
+          </div>
+          <S.nav>
+            <Button variant="unStyled">
+              <BiUserCircle />
+              Perfil
+            </Button>
+            <Button variant="unStyled">
+              <BiSolidCartAlt />
+              Carrinho
+            </Button>
+          </S.nav>
         </S.HeaderCenter>
       </S.Header>
     </>

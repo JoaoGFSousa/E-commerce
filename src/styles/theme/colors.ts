@@ -21,5 +21,8 @@ export const colors = {
         error: "#FF0000",
         info: "#00BFFF",
     },
+    white:{
+        primary:"#FFFFFF"
+    }
 
     }
