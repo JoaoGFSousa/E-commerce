@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Providers from "../providers";
 import GlobalStyles from "@/styles/global";
+import StyledComponentsRegistry from "../registry";
 
 export const metadata = {
   title: "Next.js",
@@ -15,11 +16,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Providers>
-          <GlobalStyles />
-          <Header />
-          {children}
-        </Providers>
+        <StyledComponentsRegistry>
+          <Providers>
+            <GlobalStyles />
+            <Header />
+            {children}
+          </Providers>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
