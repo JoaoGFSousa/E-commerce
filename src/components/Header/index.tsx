@@ -1,12 +1,12 @@
 "use client";
 
 import { StyledLink } from "../Link";
-import { Input } from "../Input";
 import * as S from "./header.style";
 import { AiOutlineSearch } from "react-icons/ai";
 import IconButton from "../IconButton";
 import { BiUserCircle, BiSolidCartAlt } from "react-icons/bi";
 import { Button } from "../Button";
+import Input from "../Input";
 
 const Header: React.FC = () => {
   return (
