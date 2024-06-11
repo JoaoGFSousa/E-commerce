@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
-import Providers from "../providers";
 import GlobalStyles from "@/styles/global";
+import Providers from "../providers";
 import StyledComponentsRegistry from "../registry";
 
 export const metadata = {

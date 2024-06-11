@@ -1,6 +1,5 @@
-import Header from "@/components/Header";
-import Providers from "../providers";
 import GlobalStyles from "@/styles/global";
+import Providers from "../providers";
 import StyledComponentsRegistry from "../registry";
 
 export const metadata = {
@@ -14,7 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body>
+      <body
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          background:
+            "linear-gradient(90deg, rgba(142,136,115,1) 0%, rgba(241,136,75,1) 49%)",
+        }}
+      >
         <StyledComponentsRegistry>
           <Providers>
             <GlobalStyles />

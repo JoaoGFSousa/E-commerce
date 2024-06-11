@@ -17,34 +17,35 @@ export const HeaderTop = styled.section`
   div{
     display: flex;
     gap: 1rem;
-    
   }
   `
   export const HeaderCenter = styled.section`
-  padding: .5rem 10%;
+  padding: 1rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-div{
-  display: flex;
-  gap: 1rem;
-  
-}
-
-`
-
-export const nav =styled.nav`
-display:flex;
-button{
-  display:flex;
-  gap: .3rem;
-  padding: .5rem;
-  justify-content: center;
-  align-items: center;
-}
-button svg{
+  h1{
   font-size: 1.5rem;
-}
-`
+  font-weigth: 600;
+  }
+ 
+  `
+
+  export const nav = styled.nav`
+  display: flex;
+  align-items: center;
+  button{
+    display: flex;
+    gap: .3rem;
+    padding: .5rem ;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: ${({ theme }) => theme.colors.gray[400]};
+  }
+  button svg{
+    font-size: 1.5rem;
+  }
+
+  `
 

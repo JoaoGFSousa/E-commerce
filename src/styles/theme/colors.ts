@@ -27,7 +27,7 @@ export const colors = {
         info: "#00BFFF",
     },
     white:{
-        primary:"#FFFFFF"
-    }
+        primary: "#FFFFFF",
+    },
 
     }
